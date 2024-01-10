@@ -7,7 +7,7 @@ from PIL import Image
 
 
 # Load the model from the file
-model = load('C:/Users/myatk/Downloads/C _Users_myatk_Desktop_svm_model.joblib')
+model = load('C:/Users/myatk/Downloads/svm_model.joblib')
 
 # Loadig  dataset
 @st.cache_data  # This decorator will cache the loaded data to improve app performance
