@@ -7,12 +7,12 @@ from PIL import Image
 
 
 # Load the model from the file
-model = load('C:/Users/myatk/Downloads/svm_model.joblib')
+model = load('C:/Users/myatk/Desktop/svm_model.joblib')
 
 # Loadig  dataset
 @st.cache_data  # This decorator will cache the loaded data to improve app performance
 def load_data():
-    data = pd.read_csv('C:/Users/myatk/Downloads/preprocessed_students_data.csv')
+    data = pd.read_csv('preprocessed_students_data.csv')
     return data
 
 df = load_data()
